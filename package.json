@@ -9,7 +9,7 @@
         "test": "vitest",
         "test:watch": "vitest watch",
         "test:coverage": "vitest run --coverage",
-        "prepare": "husky",
+        "prepare": "husky install",
         "lint": "eslint . --ext .ts,.tsx --fix",
         "format": "prettier --write \"src/**/*.{ts,tsx,scss}\"",
         "check-types": "tsc --noEmit",
