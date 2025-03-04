@@ -3,6 +3,8 @@
 Ocena umiejętności kandydata w zakresie pracy z JavaScript, TypeScript, CSS oraz
 integracji z API i wykorzystania modeli AI.
 
+link z podglądem live: https://sentiment-analysis-jakub-granos.netlify.app
+
 Projekt został wykonany z użyciem:
 node: v20.15.1
 yarn 1.22.22
