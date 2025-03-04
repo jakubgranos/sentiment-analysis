@@ -1,0 +1,114 @@
+.sentiment-modal {
+    &__overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        padding: 1rem;
+    }
+
+    &__container {
+        background-color: $color-white;
+        border-radius: 0.5rem;
+        width: 100%;
+        max-width: 31.25rem;
+        position: relative;
+        box-shadow: 0 0.62rem 1.87rem rgba(0, 0, 0, 0.2);
+        animation: slideIn 0.3s ease-out;
+    }
+
+    &__close-button {
+        position: absolute;
+        top: 0.31rem;
+        right: 0.62rem;
+        background: none;
+        border: none;
+        font-size: 3.4rem;
+        cursor: pointer;
+        color: $color-text-secondary;
+        transition: color 0.2s;
+
+        &:hover {
+            color: $color-text-primary;
+        }
+    }
+
+    &__content {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    &__icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &__type {
+        font-size: 1.5rem;
+        margin: 0.3rem 0;
+        color: $color-text-primary;
+    }
+
+    &__confidence {
+        margin: 1rem 0;
+        font-size: 0.9rem;
+        color: $color-text-secondary;
+    }
+
+    &__confidence-bar {
+        height: 0.5rem;
+        background-color: $color-disabled;
+        border-radius: 0.25rem;
+        margin-top: 0.3rem;
+        overflow: hidden;
+    }
+
+    &__confidence-fill {
+        height: 100%;
+        background-color: $color-primary;
+        border-radius: 0.25rem;
+    }
+
+    &__description {
+        color: $color-text-secondary;
+        margin-bottom: 1.5rem;
+    }
+
+    &__tip {
+        background-color: $color-background;
+        border-radius: 0.3rem;
+        padding: 1rem;
+        text-align: left;
+
+        h3 {
+            margin-top: 0;
+            font-size: 1rem;
+            color: $color-primary;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 0.87rem;
+            color: $color-text-secondary;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(1.25rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

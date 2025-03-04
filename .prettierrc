@@ -1,0 +1,10 @@
+{
+    "doubleQuote": true,
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "trailingComma": "es5",
+    "endOfLine": "auto"
+}
